@@ -14,15 +14,105 @@
     <title>Smart Ticketing</title>
 
 </head>
-<body class="font-poppins">
+<body class="font-poppins p-5 m-5">
     <header>
+        <!-- nav bar ticket-->
         <nav>
-
+            <div class="flex justify-around">
+                <h1 class="text-3xl text-[#030712] font-semibold ">P-Ticket</h1>
+                <div class="flex gap-6 ">
+                    <a href="Home">Home</a>
+                    <a href="About">About</a>
+                    <a href="destination">Destination</a>
+                    <a href="search">Search</a>
+                </div>
+                <div class="flex gap-3 bg-neutral-200 ring-green-400 ring-1 rounded-lg w-32 h-12">
+                    <h3 class="text-[#1DD100] text-2xl  ml-3 mt-2 font-medium">Bus</h3>
+                    <img class="w-12" src="./images/bus-icon.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <!-- background banner nav-->
+        <nav class="mt-10">
+            <div class=" border bg-[url(./images/banner.png)] min-h-full bg-no-repeat ml-10">
+                <div class="flex flex-1 flex-col items-center gap-8 mt-20">
+                    <h1 class="text-5xl font-medium text-[#ffffff] text-center">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+                    <p class="font-medium text-[#ffffff] w-[50%] text-center">Yes, you can run unit tests and view the results directly within the app. The 
+                        integrated testing features allow for a streamlined</p>
+                        <button class="text-xl text-[#030712] w-40 h-16 font-semibold bg-[#1DD100] rounded-lg ">Buy Tickets</button>
+              </div>
+              <!-- banner card price on background nav--> 
+              <nav class="flex gap-8 ml-32 pt-32">
+                  <!--card no-1 -->
+                <div class="flex p-6 border-b-lime-600 bg-[#ffffff] w-72 h-32 gap-4 items-center rounded-2xl">
+                    <div>
+                        <img src="./images/people.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-5xl font-bold text-[#030712]">500K+</h1>
+                        <p class="text-gray-500">Registered users</p>
+                    </div>
+                </div>
+                <!--card no 2-->
+                <div class="flex  border bg-[#ffffff] w-72 h-32 gap-4 items-center rounded-2xl">
+                    <div>
+                        <img src="./images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-5xl font-bold text-[#030712]">1.7 lacks</h1>
+                        <p class="text-gray-500">Tickets sold</p>
+                    </div>
+                </div>
+                <!--card no 3-->
+                <div class="flex border p-6 bg-[#ffffff] w-72 h-32 gap-4 items-center rounded-2xl">
+                    <div>
+                        <img src="./images/stoppage.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-5xl font-bold text-[#030712]">80K+</h1>
+                        <p class="text-gray-500">Rental partners
+                        </p>
+                    </div>
+                </div>
+            </nav>
+             
+            </div>
+            
         </nav>
     </header>
     <main>
         <article>
-
+            <h1 class="text-4xl font-semibold text-center mt-20">Best offers for you</h1>
+            <!-- card coupon container-->
+            <section class="flex gap-5 ml-12 mt-10">
+                 <!-- coupon car no 1-->
+                <div class="flex gap-16 bg-yellow-400 w-[47%] min-h-full p-10 rounded-2xl border">
+                    <div class="space-y-2">
+                        <h1 class="text-[#030712] text-4xl font-bold">15% OFF</h1>
+                        <h3 class="text-[#030712] font-semibold text-xl">on your next purchase</h3>
+                        <p class="text-gray-900">use by January 2024</p>
+                    </div>
+                            <hr class="text-[#fff] font-bold border-dashed">
+                    <div class="flex flex-col justify-center space-y-2">
+                        <h1 class="text-[#030712] font-bold text-2xl">NEW15</h1>
+                        <p class="text-gray-900">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- coupon car no 2-->
+                <div class="flex gap-12 bg-pink-300 w-[47%] min-h-full p-10 rounded-2xl border">
+                    <div class="space-y-2">
+                        <h1 class="text-[#030712] text-4xl font-bold">20% OFF</h1>
+                        <h3 class="text-[#030712] font-semibold text-xl">on your next purchase</h3>
+                        <p class="text-gray-900">use by January 2024</p>
+                    </div>
+                    <hr class="text-[#ff] border-dashed">
+                    <div class="flex flex-col justify-center space-y-2">
+                        <h1 class="text-[#030712] font-bold text-2xl">Couple 20</h1>
+                        <p class="text-gray-900">Coupon Code</p>
+                    </div>
+                </div>
+            </section>
+            <button class="text-2xl text-[#1DD100] font-medium border w-48 min-h-full ">See All Offers</button>
         </article>
     </main>
     <footer>

@@ -7,7 +7,9 @@ function addNextClick(elementId){
 function next(){
     addNextClick('header-full');
     addNextClick('main-full-article-1');
-    addNextClick('footer-full')
+    addNextClick('footer-full');
+
+    removeNextClick('main-full-article-2')
 }
 
 // -----------------------continue part------------
@@ -16,15 +18,25 @@ function addContinueClick(elementId){
     const article2 = document.getElementById(elementId);
     article2.classList.add('hidden');
 }
+
+function removeNextClick(elementId){
+    const article1 = document.getElementById(elementId);
+    article1.classList.remove('hidden');
+}
 function continu(){
-    addContinueClick('main-full-article-2');
     removeNextClick('header-full');
     removeNextClick('main-full-article-1');
     removeNextClick('footer-full');
 
+    addNextClick('main-full-article-2');
 }
 
-function removeNextClick(elementId){
-    const article1 = document.getElementById(elementId);
-    article1.classList.remove('hidden')
+// ------------click button div section---------
+function clickBtnDiv(elementId){
+    const addClickBtn = document.getElementById(elementId);
+    addClickBtn.classList.add('bg-green-500');
+
+}
+function clickSeat(){
+    clickBtnDiv('click-btn-div');
 }
